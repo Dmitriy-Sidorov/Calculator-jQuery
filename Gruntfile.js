@@ -7,6 +7,17 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        connect: {
+            server: {
+                options: {
+                    port: 8080,
+                    base: 'html',
+                    keepalive: true,
+                    livereload: true
+                }
+            }
+        },
+
         sass: {
             style: {
                 files: [
@@ -88,6 +99,7 @@ module.exports = function (grunt) {
                 files: ['js/*.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
+                    livereload: true,
                     spawn: false
                 }
             }
@@ -106,5 +118,9 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('scripts', ['concat', 'uglify']);
+
+    grunt.registerTask('server', function () {
+        return grunt.task.run(['connect:server'])
+    });
 
 };
