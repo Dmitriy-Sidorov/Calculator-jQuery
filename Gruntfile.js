@@ -105,6 +105,6 @@ module.exports = function (grunt) {
         'postcss:style'
     ]);
 
-    grunt.registerTask('scripts', []);
+    grunt.registerTask('scripts', ['concat', 'uglify']);
 
 };
