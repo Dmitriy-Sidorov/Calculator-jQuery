@@ -1,4 +1,32 @@
-.calc {
-  padding: 20px 40px;
-  border: 7px solid #aeaeae;
+#main {
+  margin-top: 100px;
+
+  .calc {
+    padding: 20px 30px;
+    border: 7px solid #aeaeae;
+
+    label {
+      margin-top: 15px;
+    }
+
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+
+    .price {
+      line-height: 1em;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  .card-images {
+    img {
+      display: none;
+    }
+    #card_1_0 {
+      display: inline-block;
+    }
+  }
 }

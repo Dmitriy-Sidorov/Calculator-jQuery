@@ -6456,8 +6456,23 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-.calc {
-  padding: 20px 40px;
-  border: 7px solid #aeaeae; }
+#main {
+  margin-top: 100px; }
+  #main .calc {
+    padding: 20px 30px;
+    border: 7px solid #aeaeae; }
+    #main .calc label {
+      margin-top: 15px; }
+    #main .calc h4 {
+      margin-top: 30px;
+      margin-bottom: 25px; }
+    #main .calc .price {
+      line-height: 1em;
+      font-size: 40px;
+      font-weight: 700; }
+  #main .card-images img {
+    display: none; }
+  #main .card-images #card_1_0 {
+    display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
