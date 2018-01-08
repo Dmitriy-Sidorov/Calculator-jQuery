@@ -15,9 +15,44 @@
 <section id="main">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="calc">
                     <h2>Расчет стоимости</h2>
+                    <label for="card_edition">Выберите тираж</label>
+                    <select class="form-control" name="edition" id="card_edition">
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="150">150</option>
+                        <option value="180">180</option>
+                        <option value="210">210</option>
+                        <option value="240">240</option>
+                        <option value="270">270</option>
+                        <option value="300">300</option>
+                        <option value="360">360</option>
+                        <option value="420">420</option>
+                        <option value="510">510</option>
+                        <option value="600">600</option>
+                        <option value="900">900</option>
+                        <option value="1020">1020</option>
+                        <option value="1500">1500</option>
+                        <option value="3000">3000</option>
+                    </select>
+                    <label for="card_paper">Выберите бумагу</label>
+                    <select name="card_paper" id="card_paper" class="form-control">
+                        <option value="Мелованная бумага (белая)">Мелованная бумага (белая)</option>
+                        <option value="Бумага повышенной белезны (SPLENDORGEL)">Бумага повышенной белезны
+                            (SPLENDORGEL)
+                        </option>
+                        <option value="Prestige Лён (белый)">Prestige Лён (белый)</option>
+                    </select>
+                    <label for="card_color">Выберите цветность</label>
+                    <select name="card_color" id="card_color" class="form-control">
+                        <option value="Односторонняя черно-белая">Односторонняя черно-белая</option>
+                        <option value="Двусторонняя черно-белая">Двусторонняя черно-белая</option>
+                        <option value="Односторонняя цветная">Односторонняя цветная</option>
+                        <option value="Цветная с лицевой, ч/б с оборотной">Цветная с лицевой, ч/б с оборотной</option>
+                        <option value="Двусторонняя цветная">Двусторонняя цветная</option>
+                    </select>
                 </div>
             </div>
             <div class="col-sm-6"></div>
@@ -26,10 +61,13 @@
 </section>
 
 
-
 <link rel="stylesheet" href="css/normalize.css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/built.js"></script>
 </body>
 </html>
