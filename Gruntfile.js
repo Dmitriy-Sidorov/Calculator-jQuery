@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 
         concat: {
             options: {
-                separator: ' '
+                separator: '\n'
             },
             dist: {
                 src: ["js/libs/bootstrap.min.js", 'js/custom.js'],
