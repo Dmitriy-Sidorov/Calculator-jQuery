@@ -7,17 +7,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        connect: {
-            server: {
-                options: {
-                    port: 8080,
-                    base: 'html',
-                    keepalive: true,
-                    livereload: true
-                }
-            }
-        },
-
         sass: {
             style: {
                 files: [
@@ -62,7 +51,7 @@ module.exports = function (grunt) {
                 separator: ' '
             },
             dist: {
-                src: ['js/custom.js'],
+                src: ["js/libs/bootstrap.min.js", 'js/custom.js'],
                 dest: 'html/js/built.js'
             }
         },
@@ -101,6 +90,17 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true,
                     spawn: false
+                }
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    port: 8080,
+                    base: 'html',
+                    keepalive: true,
+                    livereload: true
                 }
             }
         }
