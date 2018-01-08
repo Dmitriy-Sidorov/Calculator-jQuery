@@ -12,8 +12,6 @@ $(document).ready(function () {
         $final_edition = $edition / $division;
         $price = $final_edition * $paper_ratio + parseInt($print_file) + $final_edition*$print;
 
-        console.log($price);
-
         $('span#final_price').text(Math.round($price));
         if ($color_format) {
             $('.card-images img').hide();
