@@ -6456,7 +6456,8 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-h1 {
-  color: #000; }
+.calc {
+  padding: 20px 40px;
+  border: 7px solid #aeaeae; }
 
 /*# sourceMappingURL=style.css.map */
