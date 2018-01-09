@@ -7971,18 +7971,20 @@ a.text-dark:focus, a.text-dark:hover {
     height: 50px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background: black; }
+    background: black;
+    margin: 0 10px;
+    cursor: pointer; }
   #colorSelect .colorBlue {
-    background: blue; }
+    background: #046bff; }
   #colorSelect .colorWhite {
-    background: white; }
+    background: #f0f0f0; }
   #colorSelect .colorRed {
-    background: red; }
+    background: #eb0000; }
   #colorSelect .colorBlack {
     background: black; }
   #colorSelect .colorSilver {
     background: silver; }
   #colorSelect .colorOrange {
-    background: orange; }
+    background: #eb8700; }
   #colorSelect .colorGray {
     background: gray; }
