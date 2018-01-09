@@ -10,23 +10,79 @@
     <link href="css/style.css" rel="stylesheet">
 
 </head>
-<body class="text-center">
+<body>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <h1>Расчет стоимости автомобиля</h1>
+            <div id="imgHolder" class="imgHolder">
+                <img src="img/solaris/black.png" alt="Автомобиль">
 
-<h2>Изображения и атрибуты</h2>
-<div id="imgHolder" class="imgHolder">
-    <img src="img/solaris/black.png" alt="Автомобиль">
+                <div class="model-summary">
+                    <div class="model-name">Hundai Solaris</div>
+                    <div class="model-specs" id="modelSpecs">1.6 — 6AT Comfort</div>
+                    <div class="model-price" id="modelPrice">1 000 000 руб</div>
+                    <div class="model-price" id="modelPriceUSD">$ 30 000</div>
+                    <div class="button">Заказать</div>
+                </div>
+            </div>
+        </div>
+
+        <form id="autoForm">
+            <h2>Настройка авто для себя</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Двигатель</h3>
+                    <div class="form-block">
+                        <input type="radio" name="engine" id="engine1400" value="624900" checked>
+                        <label for="engine1400">1.4 л (100 л.с.)</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="engine" id="engine1600" value="749900">
+                        <label for="engine1600">1.6 л (123 л.с.)</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Коробка передач</h3>
+                    <div class="form-block">
+                        <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+                        <label for="transmission6MT">Ручная, 6 ступеней (6 MT)</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="transmission" id="transmission6AT" value="125000">
+                        <label for="transmission6AT">Автомат, 6 ступеней (6 AT)</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Пакет (допольнительные опции)</h3>
+                    <div class="form-block">
+                        <input type="radio" name="package" id="packageActive" value="0" checked>
+                        <label for="packageActive">Active</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="package" id="packageActivePlus" value="85000">
+                        <label for="packageActivePlus">Active Plus (кондиционер)</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="radio" name="package" id="packageComfort" value="130000">
+                        <label for="packageComfort">Comfort (климатконтроль)</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h4>Цвета</h4>
+        <div id="colorSelect" class="colorSelect">
+            <div class="colorItem colorBlue" data-color="blue"></div>
+            <div class="colorItem colorWhite" data-color="white"></div>
+            <div class="colorItem colorRed" data-color="red"></div>
+            <div class="colorItem colorBlack" data-color="black"></div>
+            <div class="colorItem colorSilver" data-color="silver"></div>
+            <div class="colorItem colorOrange" data-color="orange"></div>
+            <div class="colorItem colorGray" data-color="gray"></div>
+        </div>
+    </div>
 </div>
-
-<div id="colorSelect" class="colorSelect">
-    <div class="colorItem colorBlue" data-color="blue"></div>
-    <div class="colorItem colorWhite" data-color="white"></div>
-    <div class="colorItem colorRed" data-color="red"></div>
-    <div class="colorItem colorBlack" data-color="black"></div>
-    <div class="colorItem colorSilver" data-color="silver"></div>
-    <div class="colorItem colorOrange" data-color="orange"></div>
-    <div class="colorItem colorGray" data-color="gray"></div>
-</div>
-
 
 
 <link rel="stylesheet" href="css/normalize.css">
