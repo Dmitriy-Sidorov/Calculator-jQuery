@@ -49,31 +49,7 @@ module.exports = function (grunt) {
                 },
                 src: './styles/style.css',
                 dest: './html/css/style.min.css'
-            }/*,
-
-
-            options: {
-                map: true,
-                processors: [
-                    require('autoprefixer')({
-                        browsers: ['last 20 version', 'ie 9', 'ie 8']
-                    }),
-                    require('cssnano')
-                ]
-            },
-            style: {
-                files: [
-                    {
-                        src: './styles/style.css',
-                        dest: './html/css/style.css'
-                    },
-                    {
-                        src: './html/css/style.css',
-                        dest: './html/css/style.min.css'
-                    }
-
-                ]
-            }*/
+            }
         },
 
         concat: {
@@ -139,7 +115,7 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
     grunt.registerTask('default', [
-        'style', 'concat', 'uglify'
+        'style', 'scripts'
     ]);
 
     grunt.registerTask('style', [
