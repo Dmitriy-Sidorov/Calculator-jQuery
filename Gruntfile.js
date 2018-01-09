@@ -21,29 +21,59 @@ module.exports = function (grunt) {
         },
 
         postcss: {
+            prefix: {
+                options: {
+                    processors: [
+                        require('autoprefixer')({
+                            browsers: ['last 20 version', 'ie 9', 'ie 8']
+                        })
+                    ]
+                },
+                files: [
+                    {
+                        src: './styles/style.css',
+                        dest: './html/css/style.css'
+                    },
+                    {
+                        src: './styles/style.css'
+                    }
+
+                ]
+            },
+
+            min: {
+                options: {
+                    processors: [
+                        require('cssnano')
+                    ]
+                },
+                src: './styles/style.css',
+                dest: './html/css/style.min.css'
+            }/*,
+
+
             options: {
                 map: true,
                 processors: [
-                    require('autoprefixer')(
-                        {
-                            browsers: ['last 20 version']
-                        }
-                    ),
+                    require('autoprefixer')({
+                        browsers: ['last 20 version', 'ie 9', 'ie 8']
+                    }),
                     require('cssnano')
                 ]
             },
             style: {
                 files: [
                     {
-                        src: 'styles/css/style.css',
-                        dest: 'styles/css/style.min.css'
+                        src: './styles/style.css',
+                        dest: './html/css/style.css'
                     },
                     {
-                        src: 'html/css/style.css',
-                        dest: 'html/css/style.min.css'
+                        src: './html/css/style.css',
+                        dest: './html/css/style.min.css'
                     }
+
                 ]
-            }
+            }*/
         },
 
         concat: {
@@ -77,7 +107,7 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['styles/*.scss'],
-                tasks: ['style'],
+                tasks: ['style', 'postcss'],
                 options: {
                     livereload: true,
                     spawn: false,
@@ -114,7 +144,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('style', [
         'sass:style',
-        'postcss:style'
+        'postcss:prefix',
+        'postcss:min'
     ]);
 
     grunt.registerTask('scripts', ['concat', 'uglify']);
