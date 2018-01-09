@@ -42,17 +42,18 @@
     height: 50px;
     border-radius: 50%;
     background: black;
+    margin: 0 10px;
+    cursor: pointer;
   }
 
   .colorBlue {
-
-    background: blue;
+    background: #046bff;
   }
   .colorWhite {
-    background: white;
+    background: #f0f0f0;
   }
   .colorRed {
-    background: red;
+    background: #eb0000;
   }
   .colorBlack {
     background: black;
@@ -61,7 +62,7 @@
     background: silver;
   }
   .colorOrange {
-    background: orange;
+    background: #eb8700;
   }
   .colorGray {
     background: gray;
