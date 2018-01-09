@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <meta content="" name="description">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="calc">
+                    <h2>Расчет стоимости</h2>
+                    <label for="card_edition">Выберите тираж</label>
+                    <select class="form-control" name="edition" id="card_edition">
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="150">150</option>
+                        <option value="180">180</option>
+                        <option value="210">210</option>
+                        <option value="240">240</option>
+                        <option value="270">270</option>
+                        <option value="300">300</option>
+                        <option value="360">360</option>
+                        <option value="420">420</option>
+                        <option value="510">510</option>
+                        <option value="600">600</option>
+                        <option value="900">900</option>
+                        <option value="1020">1020</option>
+                        <option value="1500">1500</option>
+                        <option value="3000">3000</option>
+                    </select>
+                    <label for="card_paper">Выберите бумагу</label>
+                    <select name="card_paper" id="card_paper" class="form-control">
+                        <option data-paper-ratio="6.8" value="Мелованная бумага (белая)">Мелованная бумага (белая)
+                        </option>
+                        <option data-paper-ratio="40.5" value="Бумага повышенной белезны (SPLENDORGEL)">Бумага
+                            повышенной белезны
+                            (SPLENDORGEL)
+                        </option>
+                        <option data-paper-ratio="45" value="Prestige Лён (белый)">Prestige Лён (белый)</option>
+                    </select>
+                    <label for="card_color">Выберите цветность</label>
+                    <select name="card_color" id="card_color" class="form-control">
+                        <option data-print="14" data-print-file="110" data-color="1_0"
+                                value="Односторонняя черно-белая">Односторонняя черно-белая
+                        </option>
+                        <option data-print="28" data-print-file="220" data-color="1_1" value="Двусторонняя черно-белая">
+                            Двусторонняя черно-белая
+                        </option>
+                        <option data-print="37" data-print-file="110" data-color="4_0" value="Односторонняя цветная">
+                            Односторонняя цветная
+                        </option>
+                        <option data-print="51" data-print-file="220" data-color="4_1"
+                                value="Цветная с лицевой, ч/б с оборотной">Цветная с лицевой, ч/б с оборотной
+                        </option>
+                        <option data-print="74" data-print-file="220" data-color="4_4" value="Двусторонняя цветная">
+                            Двусторонняя цветная
+                        </option>
+                    </select>
+                    <h4>
+                        <small>Приблизительная</small>
+                        <br>Стоимость за тираж
+                    </h4>
+                    <p class="price">
+                        <span id="final_price">0</span>
+                        <i class="fas fa-ruble-sign"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="card-images text-center">
+                    <img src="img/1_0.png" alt="" id="card_1_0">
+                    <img src="img/1_1.png" alt="" id="card_1_1">
+                    <img src="img/4_0.png" alt="" id="card_4_0">
+                    <img src="img/4_1.png" alt="" id="card_4_1">
+                    <img src="img/4_4.png" alt="" id="card_4_4">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/built.js"></script>
+</body>
+</html>
