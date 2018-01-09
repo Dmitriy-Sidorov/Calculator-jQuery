@@ -7957,9 +7957,32 @@ a.text-dark:focus, a.text-dark:hover {
   #main .card-images #card_1_0 {
     display: inline-block; }
 
-.colorItem {
-  width: 50px;
-  height: 50px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background: black; }
+#colorSelect {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #colorSelect .colorItem {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: black; }
+  #colorSelect .colorBlue {
+    background: blue; }
+  #colorSelect .colorWhite {
+    background: white; }
+  #colorSelect .colorRed {
+    background: red; }
+  #colorSelect .colorBlack {
+    background: black; }
+  #colorSelect .colorSilver {
+    background: silver; }
+  #colorSelect .colorOrange {
+    background: orange; }
+  #colorSelect .colorGray {
+    background: gray; }
