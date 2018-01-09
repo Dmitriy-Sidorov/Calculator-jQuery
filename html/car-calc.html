@@ -11,25 +11,24 @@
 
 </head>
 <body>
-<div class="main">
+<div class="main auto">
     <div class="container">
         <div class="row">
-            <h1>Расчет стоимости автомобиля</h1>
-            <div id="imgHolder" class="imgHolder">
+            <h1 class="col-12">Расчет стоимости автомобиля</h1>
+            <div id="imgHolder" class="imgHolder col-md-8">
                 <img src="img/solaris/black.png" alt="Автомобиль">
-
-                <div class="model-summary">
-                    <div class="model-name">Hundai Solaris</div>
-                    <div class="model-specs" id="modelSpecs">1.6 — 6AT Comfort</div>
-                    <div class="model-price" id="modelPrice">1 000 000 руб</div>
-                    <div class="model-price" id="modelPriceUSD">$ 30 000</div>
-                    <div class="button">Заказать</div>
-                </div>
+            </div>
+            <div class="model-summary col-md-4">
+                <div class="model-name">Hundai Solaris</div>
+                <div class="model-specs" id="modelSpecs">1.6 — 6AT Comfort</div>
+                <div class="model-price" id="modelPrice">1 000 000 руб</div>
+                <div class="model-price" id="modelPriceUSD">$ 30 000</div>
+                <div class="button btn btn-primary">Заказать</div>
             </div>
         </div>
 
         <form id="autoForm">
-            <h2>Настройка авто для себя</h2>
+            <h2>Выбор параметров</h2>
             <div class="row">
                 <div class="col-sm-4">
                     <h3>Двигатель</h3>
@@ -54,7 +53,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3>Пакет (допольнительные опции)</h3>
+                    <h3>Доп пакет</h3>
                     <div class="form-block">
                         <input type="radio" name="package" id="packageActive" value="0" checked>
                         <label for="packageActive">Active</label>
@@ -71,7 +70,7 @@
             </div>
         </form>
 
-        <h4>Цвета</h4>
+        <h3>Цвета</h3>
         <div id="colorSelect" class="colorSelect">
             <div class="colorItem colorBlue" data-color="blue"></div>
             <div class="colorItem colorWhite" data-color="white"></div>

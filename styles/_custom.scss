@@ -33,41 +33,96 @@
 }
 
 //Калькулятор стоимости автомобиля
-#colorSelect {
-  display: flex;
-  justify-content: center;
+.main.auto {
+  margin-top: 30px;
 
-  .colorItem {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: black;
-    margin: 0 10px;
-    cursor: pointer;
+  h1 {
+    margin-bottom: 30px;
+  }
+  h2, h3 {
+    margin-bottom: 1rem;
   }
 
-  .colorBlue {
-    background: #046bff;
+  h3 {
+    font-size: 1.5rem;
   }
-  .colorWhite {
-    background: #f0f0f0;
+
+  .imgHolder {
+
+    img {
+      width: 100%;
+    }
   }
-  .colorRed {
-    background: #eb0000;
+
+  #autoForm {
+    margin-top: 50px;
   }
-  .colorBlack {
-    background: black;
+
+  .model-summary {
+
+    .model-name {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .model-specs {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    .model-price {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .button {
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
   }
-  .colorSilver {
-    background: silver;
+
+  #autoForm {
+
+    .form-block {
+
+      label {
+        font-size: 18px;
+      }
+    }
   }
-  .colorOrange {
-    background: #eb8700;
-  }
-  .colorGray {
-    background: gray;
+
+  #colorSelect {
+    display: flex;
+
+    .colorItem {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: black;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .colorBlue {
+      background: #046bff;
+    }
+    .colorWhite {
+      background: #f0f0f0;
+    }
+    .colorRed {
+      background: #eb0000;
+    }
+    .colorBlack {
+      background: black;
+    }
+    .colorSilver {
+      background: silver;
+    }
+    .colorOrange {
+      background: #eb8700;
+    }
+    .colorGray {
+      background: gray;
+    }
   }
 }
-
 
 
