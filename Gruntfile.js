@@ -57,7 +57,7 @@ module.exports = function (grunt) {
                 separator: '\n'
             },
             dist: {
-                src: ["js/libs/bootstrap.min.js", 'js/custom.js'],
+                src: ["js/libs/bootstrap.min.js", 'js/card.js', 'js/solaris.js'],
                 dest: 'html/js/built.js'
             }
         },
