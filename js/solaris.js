@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $colorSelect = $('#imgHolder img');
+    $colorSelect = $('#colorSelect .colorItem');
     $carImg = $('#imgHolder img');
 
 

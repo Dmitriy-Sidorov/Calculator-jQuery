@@ -7957,34 +7957,57 @@ a.text-dark:focus, a.text-dark:hover {
   #main .card-images #card_1_0 {
     display: inline-block; }
 
-#colorSelect {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  #colorSelect .colorItem {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    background: black;
-    margin: 0 10px;
-    cursor: pointer; }
-  #colorSelect .colorBlue {
-    background: #046bff; }
-  #colorSelect .colorWhite {
-    background: #f0f0f0; }
-  #colorSelect .colorRed {
-    background: #eb0000; }
-  #colorSelect .colorBlack {
-    background: black; }
-  #colorSelect .colorSilver {
-    background: silver; }
-  #colorSelect .colorOrange {
-    background: #eb8700; }
-  #colorSelect .colorGray {
-    background: gray; }
+.main.auto {
+  margin-top: 30px; }
+  .main.auto h1 {
+    margin-bottom: 30px; }
+  .main.auto h2, .main.auto h3 {
+    margin-bottom: 1rem; }
+  .main.auto h3 {
+    font-size: 1.5rem; }
+  .main.auto .imgHolder img {
+    width: 100%; }
+  .main.auto #autoForm {
+    margin-top: 50px; }
+  .main.auto .model-summary .model-name {
+    font-size: 30px;
+    font-weight: 900; }
+  .main.auto .model-summary .model-specs {
+    font-size: 18px;
+    margin: 5px 0; }
+  .main.auto .model-summary .model-price {
+    font-size: 24px;
+    font-weight: 700; }
+  .main.auto .model-summary .button {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600; }
+  .main.auto #autoForm .form-block label {
+    font-size: 18px; }
+  .main.auto #colorSelect {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .main.auto #colorSelect .colorItem {
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: black;
+      margin: 0 10px;
+      cursor: pointer; }
+    .main.auto #colorSelect .colorBlue {
+      background: #046bff; }
+    .main.auto #colorSelect .colorWhite {
+      background: #f0f0f0; }
+    .main.auto #colorSelect .colorRed {
+      background: #eb0000; }
+    .main.auto #colorSelect .colorBlack {
+      background: black; }
+    .main.auto #colorSelect .colorSilver {
+      background: silver; }
+    .main.auto #colorSelect .colorOrange {
+      background: #eb8700; }
+    .main.auto #colorSelect .colorGray {
+      background: gray; }
