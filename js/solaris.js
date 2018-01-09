@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
-    $srcValue = $('#imgHolder img').attr('src');
+    $colorSelect = $('#imgHolder img');
+    $carImg = $('#imgHolder img');
 
 
-    $('.colorItem').on('click', function () {
-        $('#imgHolder img').attr('src', 'img/solaris/' + $(this).attr('data-color') + '.png');
+    $colorSelect.on('click', function () {
+        $imgPath = $(this).attr('data-color');
+        $carImg.attr('src', 'img/solaris/' + $imgPath + '.png');
     })
 });
