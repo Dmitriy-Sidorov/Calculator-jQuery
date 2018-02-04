@@ -7937,6 +7937,24 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+.header {
+  margin-top: 50px; }
+  .header ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    list-style-type: none;
+    font-size: 22px; }
+    .header ul li {
+      margin-right: 20px; }
+      .header ul li a {
+        color: #000; }
+
 #main {
   margin-top: 100px; }
   #main .calc {
@@ -8010,3 +8028,21 @@ a.text-dark:focus, a.text-dark:hover {
       background: #eb8700; }
     .main.auto #colorSelect .colorGray {
       background: gray; }
+
+hr {
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.6rem !important; }
+
+.info .align-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .info .align-between span {
+    font-weight: 600; }
+  .info .align-between span:nth-child(2) {
+    margin-right: 50px; }

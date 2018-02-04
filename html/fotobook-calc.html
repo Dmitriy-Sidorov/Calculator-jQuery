@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <meta content="" name="description">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <ul class="col-12">
+                <li><a href="/">Расчет стоимости визиток</a></li>
+                <li><a href="/car-calc.html">Стоимость авто</a></li>
+                <li><a href="/fotobook-calc.html">Расчет стоимости фотокниги</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<div class="container calc-foto">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="calc">
+                <div class="form-group">
+                    <lable for="page-size">Размер страницы</lable>
+                    <select id="page-size" class="form-control">
+                        <option selected>Размер страницы</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <lable for="qty">Кол-во разворотов</lable>
+                    <input type="number" class="form-control" size="3" name="num" min="1" value="1" id="qty">
+                </div>
+                <div class="form-group">
+                    <lable for="cover">Вид обложки</lable>
+                    <select id="cover" class="form-control">
+                        <option selected>Вид обложки</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info">
+                <h2>Параметры и цены</h2>
+                <hr>
+                <div class="align-between">
+                    <span>Размер страницы </span>
+                    <span class="page-size">-</span>
+                </div>
+                <hr>
+                <div class="align-between">
+                    <span>Количество разворотов </span>
+                    <span class="qty">-</span>
+                </div>
+                <hr>
+                <div class="align-between">
+                    <span>Цена обложки </span>
+                    <span class="cover">-</span>
+                </div>
+                <hr>
+                <div class="align-between">
+                    <span>Цена на форзац </span>
+                    <span class="endpaper">-</span>
+                </div>
+                <hr>
+                <div class="align-between">
+                    <span>Итого </span>
+                    <span class="sum">-</span>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/fotobook.js"></script>
+</body>
+</html>

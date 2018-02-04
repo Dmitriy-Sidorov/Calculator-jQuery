@@ -1,3 +1,22 @@
+.header {
+  margin-top: 50px;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    font-size: 22px;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
 //Калькулятор визиток
 #main {
   margin-top: 100px;
@@ -121,6 +140,27 @@
     }
     .colorGray {
       background: gray;
+    }
+  }
+}
+
+// Калькулятор стоимости фотообложки
+
+hr {
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.info {
+  .align-between {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: 600;
+    }
+    span:nth-child(2) {
+      margin-right: 50px;
     }
   }
 }

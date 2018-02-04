@@ -9,11 +9,11 @@ $(document).ready(function () {
     $carImg = $('#imgHolder img');
 
     $currencyURL = 'https://www.cbr-xml-daily.ru/daily_json.js';
-    $rurUsdRate = 0;
 
     $('#autoForm input').on('change', function () {
-        calculatePrice();
         compileSpecs();
+        calculatePrice();
+        conversionValute();
     });
 
     $colorSelect.on('click', function () {
@@ -35,6 +35,7 @@ $(document).ready(function () {
         $price = $modelPrice.toLocaleString('ru');
 
         $modelPriceHolder.html($price + ' &#8381;');
+
     }
 
     function compileSpecs() {
@@ -46,12 +47,19 @@ $(document).ready(function () {
     }
 
     $.ajax({
-        url: 'https://www.cbr-xml-daily.ru/daily_json.js',
+        dataType: 'json',
+        url: $currencyURL,
         cache: false,
         success: function (html) {
-            console.log(html.Valute.USD.Value);
+            $curresUsd = html.Valute.USD.Value;
+            conversionValute();
         }
     });
+
+    function conversionValute() {
+        $priceUsd = parseInt($modelPrice / $curresUsd);
+        $modelPriceUSD.html('&#36; ' + $priceUsd.toLocaleString('ru'));
+    }
 
     compileSpecs();
     calculatePrice();

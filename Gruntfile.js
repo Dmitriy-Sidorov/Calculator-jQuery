@@ -56,9 +56,11 @@ module.exports = function (grunt) {
             options: {
                 separator: '\n'
             },
-            dist: {
-                src: ["js/libs/bootstrap.min.js", 'js/card.js', 'js/solaris.js'],
-                dest: 'html/js/built.js'
+            basic_and_extras: {
+                files: {
+                    'html/js/built.js': ["js/libs/bootstrap.min.js", 'js/card.js', 'js/solaris.js', 'js/fotobook.js'],
+                    'html/js/fotobook.js': ["js/libs/bootstrap.min.js", 'js/fotobook.js']
+                }
             }
         },
 
